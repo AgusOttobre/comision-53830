@@ -504,6 +504,26 @@
     font-size: medium;
 }
 
+.header-pedidos{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    border: solid black;
+    justify-content: space-around;
+    background-color: aquamarine;
+}
+
+.logo-pedidos{
+    width: 9.375rem;
+    height: 9.375rem;
+}
+
+.nav-pedidos{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 1.5625rem;
+}
 
 .section-pedidos {
     width: 85rem;
@@ -533,10 +553,5 @@
 .body-index-pedidos{
     flex-wrap: wrap;
     width: 100%;
-    background-image: url(../assets/logo\ sin\ fondo.jpeg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position-x: center;
-    background-position-y: center;
     display: flex;
 }
