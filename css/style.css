@@ -510,7 +510,7 @@
     flex-direction: row;
     border: solid black;
     justify-content: space-around;
-    background-color: aquamarine;
+    background-color:#a40a41;
 }
 
 .logo-pedidos{
@@ -520,13 +520,26 @@
 
 .nav-pedidos{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     list-style: none;
     gap: 1.5625rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-pedidos a{
+    text-decoration: none;
+    color: antiquewhite;
+} 
+
+.body-index-pedidos{
+    flex-wrap: wrap;
+    width: 100%;
+    display: flex;
 }
 
 .section-pedidos {
-    width: 85rem;
+    width: 83.75rem;
     height: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -534,12 +547,11 @@
     align-items: center;
     justify-content: center;
     background-color: #a40a41;
-    opacity: 0.85;
 
 }
 
 .footer-pedidos{
-    width: 85rem;
+    width: 81.25rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -550,8 +562,48 @@
     margin-top: 4.25rem;
 }
 
-.body-index-pedidos{
-    flex-wrap: wrap;
-    width: 100%;
-    display: flex;
+@media(max-width: 768px){
+
+    .header-pedidos{
+        width: 100%;
+        background-color: aquamarine;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .section-pedidos{
+        width: 100vw;
+        background-color: aquamarine;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5625rem;
+    }
+
+    .footer-pedidos{
+        width: 100vw;
+        background-color: aquamarine;
+    }
+}
+
+@media(max-width: 320px){
+
+    .header-pedidos{
+        width: 100%;
+        background-color:#a40a41;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .section-pedidos{
+        width: 100vw;
+        background-color:#a40a41;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5625rem;
+    }
+
+    .footer-pedidos{
+        width: 100vw;
+        background-color:#a40a41;
+    }
 }
